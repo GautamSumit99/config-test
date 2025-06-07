@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        #       test file
+        - id: one-id
+          order: 999
+          uri: http://www.google.com
+          predicates:
+            - Path=/hello/v0/**
+          metadata:
+            response-timeout: 5000
+            connect-timeout: 1000

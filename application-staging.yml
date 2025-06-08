@@ -8,3 +8,11 @@ one:
       metadata:
         response-timeout: 5000
         connect-timeout: 1000
+    - id: four-id
+      order: 999
+      uri: http://www.google.com
+      predicates:
+        - Path=/sumit/v0/**
+      metadata:
+        response-timeout: 5000
+        connect-timeout: 1000
